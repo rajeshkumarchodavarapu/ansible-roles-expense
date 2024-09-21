@@ -1,11 +1,4 @@
-- name: mysql configuration
-  hosts: mysql
-  become: yes
-  vars:
-    mysql_root_password: ExpenseApp@1
-    login_host: mysql.rajeshkumar.online
-  tasks:
-  - name: ansible to install pymysql
+ - name: ansible to install pymysql
     ansible.builtin.pip:
       name:
       - PyMySQL
